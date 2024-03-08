@@ -11,10 +11,10 @@ shell:
 	docker compose exec -it golang /bin/sh
 
 compile:
-	docker compose exec golang go build hello.go
+	docker compose exec golang go build main.go
 
 run:
-	docker compose exec golang go run hello.go
+	docker compose exec golang go run main.go
 
 exec:
-	docker compose exec golang ./hello
+	docker compose exec golang ./main
